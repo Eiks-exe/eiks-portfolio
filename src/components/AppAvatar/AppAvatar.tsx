@@ -13,7 +13,7 @@ const AppAvatar: React.FC<AppAvatarProps> = ({imgSrc, alt}) => {
         <div 
             className="avatar-container"
             style={{
-                backgroundImage: `url(${imgSrc});`
+                backgroundImage: `url(${imgSrc})`,
             }}
         >
             <div className="avatar-blur-layer">
