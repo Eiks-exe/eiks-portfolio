@@ -10,8 +10,14 @@ interface AppAvatarProps {
 
 const AppAvatar: React.FC<AppAvatarProps> = ({imgSrc, alt}) => {
     return (
-        <div className="avatar-container">
-            
+        <div 
+            className="avatar-container"
+            style={{
+                backgroundImage: `url(${imgSrc});`
+            }}
+        >
+            <div className="avatar-blur-layer">
+            </div>
         </div>
     )
 };
