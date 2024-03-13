@@ -1,38 +1,21 @@
-.page-home {
-    background-color: black
-}
-
-.home-content {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    margin: 100px calc(50% - 25vw) 0px calc(50% - 25vw);
-    height: 30%;
+.app-card {
+    margin: 0px;
     background-image: url("https://cdn.midjourney.com/62e9ae22-b181-4312-a94d-6bb26253c3d8/0_0.webp");
     border-radius: 25px 25px 25px 25px;
     padding: 0px 20px;
     position: relative;
     z-index: 1;
-
-    a {
-        text-decoration: none;
-        color: rgb(88, 208, 255);
-    }
 }
 
-.home-content::after {
+.app-card::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    border-radius: 25px 25px 0px 0px;
+    border-radius: 25px 25px 25px 25px;
     background: linear-gradient(180deg, rgba(248, 248, 248, 0.068) 0%, rgb(0, 0, 0) 100%);
     backdrop-filter: blur(60px);
     z-index: -1;
-}
-
-.aboutme {
-    margin: 0px 0 50px 0;
 }

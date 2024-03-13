@@ -1,6 +1,6 @@
 import React from 'react'
-import AppAvatar from '../../components/AppAvatar/AppAvatar';
 import AppNavbar from '../../components/AppNavbar/AppNavbar';
+import AppCard from '../../components/AppCard/AppCard';
 import './PageHome.scss';
 
 const PageHome = () => {
@@ -27,7 +27,70 @@ const PageHome = () => {
               I'm 31k5. My journey is fueled by an insatiable quest to master the depths of knowledge and self, charting paths beyond conventional boundaries. With a blend of rigorous curiosity and a dedication to excellence, I seek not just to achieve but to expand what's possible. Here, you'll find a collection of my explorations and achievements, each a step toward transcending the ordinary and embracing the extraordinary.
             </p>
           </div>
-      
+          <div className="home-projects">
+            <h1>My projects</h1>
+            <div style={{
+              height: '100%',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
+              gap: '20px',
+            }}>
+              <AppCard title="Silvia" 
+                style={{
+                  gridColumn: '1 / 3',
+                  gridRow: '1 / 3',
+                  background: `linear-gradient(rgba(50, 150, 100, 0.5), rgba(0, 0, 0, 0.5))`,
+                }}
+              >
+              <p>
+                Silvia is a Discord bot that I've been working on for a while. It's designed to be a multi-purpose bot, with features ranging from moderation to fun commands. It's also open-source, so you can check out the code on GitHub.
+              </p>
+              </AppCard>
+              <AppCard title="Hive"
+                style={{
+                  gridRow: '1/3',
+                  background: `linear-gradient(rgba(180, 120, 0, 1), rgba(0, 0, 0, 1))`,
+                }}
+              >
+              <p>
+                Hive is web chat application that I've been working on. It's designed to be a simple, lightweight chat application you can use it to talk to me <a href="/">here.</a> also there' s a link to the source code on GitHub.
+              </p>
+              </AppCard>
+              <AppCard title="IRIS"
+                style={{
+                  gridColumn: '1/4',
+                  background: `linear-gradient(rgba(180, 10, 200, 1), rgba(0, 0, 0, 1))`,
+                }}
+              >
+              <p>
+                IRIS is a personal assistant that I'm working on , so far it's still in development but you can check out the source code on GitHub.
+              </p>
+              </AppCard>
+            </div>
+          </div>
+
+          <div className="home-social">
+            <h1>My socials</h1>
+            <div style={{
+              display: 'flex',
+              gap: '20px',
+            }}>
+              <ul>
+                <li>
+                  <a href="#">g</a> GitHub
+                </li>
+                <li>
+                  <a href="#">t</a> Mail
+                </li>
+                <li>
+                  <a href="#">d</a> Discord
+                </li>
+                <li>
+                  or contact me on my webchat <a href="/">here.</a> 
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
     </div>
   )

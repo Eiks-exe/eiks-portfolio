@@ -9,7 +9,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        margin: 0px 300px;
+        margin: 0px calc(50% - 25vw) 0px calc(50% - 25vw);
         .navbar-n-title {
             width: 80%;
             display: flex;
