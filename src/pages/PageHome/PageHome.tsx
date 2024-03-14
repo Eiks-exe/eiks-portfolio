@@ -5,6 +5,7 @@ import './PageHome.scss';
 
 const PageHome = () => {
   const imgSrc ="https://media.discordapp.net/attachments/1076929619204259955/1196604095230914692/31k5_1970s_dark_fantasy_book_cover_paper_art_dungeon_and_dragon_29d0026a-c66e-45fa-b46c-fb743b73a8ff.png?ex=66020f68&is=65ef9a68&hm=4dae4a40e2ba5825f3777710a668fee2a632d07029db99abc38f58d903a184ed&=&format=webp&quality=lossless&width=350&height=350"
+  
   return (
     <div className='page-home'
       style={
@@ -29,13 +30,16 @@ const PageHome = () => {
           </div>
           <div className="home-projects">
             <h1>My projects</h1>
-            <div style={{
+            <div
+            className='projects-container'
+            style={{
               height: '100%',
               display: 'grid',
               gridTemplateColumns: 'repeat(3, 1fr)',
               gap: '20px',
             }}>
               <AppCard title="Silvia" 
+                className='ac-1'
                 style={{
                   gridColumn: '1 / 3',
                   gridRow: '1 / 3',
@@ -44,19 +48,21 @@ const PageHome = () => {
               >
               <p>
                 Silvia is a Discord bot that I've been working on for a while. It's designed to be a multi-purpose bot, with features ranging from moderation to fun commands. It's also open-source, so you can check out the code on GitHub.
-              </p>
+              </p> 
               </AppCard>
               <AppCard title="Hive"
+                className='ac-2'
                 style={{
                   gridRow: '1/3',
                   background: `linear-gradient(rgba(180, 120, 0, 1), rgba(0, 0, 0, 1))`,
-                }}
+                } }
               >
               <p>
                 Hive is web chat application that I've been working on. It's designed to be a simple, lightweight chat application you can use it to talk to me <a href="/">here.</a> also there' s a link to the source code on GitHub.
               </p>
               </AppCard>
               <AppCard title="IRIS"
+                className='ac-3'
                 style={{
                   gridColumn: '1/4',
                   background: `linear-gradient(rgba(180, 10, 200, 1), rgba(0, 0, 0, 1))`,
@@ -77,13 +83,13 @@ const PageHome = () => {
             }}>
               <ul>
                 <li>
-                  <a href="#">g</a> GitHub
+                  <a href="#">github</a> 
                 </li>
                 <li>
-                  <a href="#">t</a> Mail
+                  <a href="#">eiks_art@outlook.com</a> 
                 </li>
                 <li>
-                  <a href="#">d</a> Discord
+                  <a href="http://discordapp.com/users/234728680209776640">discord</a> Discord
                 </li>
                 <li>
                   or contact me on my webchat <a href="/">here.</a> 
